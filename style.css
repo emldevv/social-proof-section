@@ -25,14 +25,18 @@ p {
     --ff: 'League Spartan', sans-serif;
     --fw-n: 300;
     --fw-m: 500;
-    --fw-b: 800;
+    --fw-b: 700;
 
     
     --primary-clr-vdp: #512051;                     /* Very dark purple - heading, star review text and review comment BG*/
     --primary-clr-mp: #927B91;                      /* Medium purple - heading para*/
     --primary-clr-mrn: #EE69A4;                     /* Morone - "Verified Buyrer" text */
     --primary-accent: #F7F2F7;                      /* Soft violet - accent for star review BG and comment review name and para */
-  
+    
+    /* Padding properties */
+  --padd-phone: 3em 2.2em;
+  --padd-ipad: 2em 3em;
+  --padd-desktop: 2em 0; 
   }
 
 
@@ -42,55 +46,112 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 100%;
+    padding: var(--padd-phone);
+}
 /* General typography */
 h1 {
     font-family: var(--ff);
     font-size: var(--fs-1-mobile);
     color: var(--primary-clr-vdp);
     font-weight: var(--fw-b);
+    letter-spacing: -.1rem;
+    line-height: .8;
 }
 
 p {
     font-family: var(--ff);
     font-size: var(--fs-p);
     font-weight: var(--fw-m);
+    letter-spacing: -.05rem;
+    line-height: 1.4;
 }
 
-/* Attribution */
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-}
+/* Body and Main */
+body {
+    max-width: 100%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
 
 /* Hero section */
-.hero__para {
-    color: var(--primary-clr-mp);
+.hero h1,
+p,
+.stars {
+    text-align: center;
 }
 
-/* Star Review section */
+h1 {
+    margin-bottom: .6em;
+}
+.hero__para {
+    color: var(--primary-clr-mp);
+    letter-spacing: -.05rem;
+    line-height: 1.4;
+    margin-bottom: 2em;
+}
+
 .star-reviews__box {
     background: var(--primary-accent);
+    border-radius: 1em;
+    margin-top: 1.5em;
+    padding: 1.5em 0;
 }
+
 .star-reviews__para {
     color: var(--primary-clr-vdp);
+    font-weight: var(--fw-b);
+    margin-top: .5em;
 }
+/* ------------------------------------------------- */
 
 /* Comment Review section */
 .comment-reviews__box {
     background-color: var(--primary-clr-vdp);
-}
-.comment-reviews__name {
-    color: white;
+    border-radius: .8em;
+    margin-bottom: 1.5em;
+    padding: 4em 3em;
 }
 
-.comment-reviews__v-buyer {
-    color: var(--primary-clr-mrn);
+.comment-reviews__profile {
+    display: flex;
 }
+
+.comment-reviews__profile-img {
+    width: 15%;
+    border-radius: 50%;
+    
+}
+
+.comment-reviews__profile-name {
+    color: white;
+    font-size: var(--fs-p-reviews);
+}
+
+.comment-reviews__verified {
+    color: var(--primary-clr-mrn);
+    font-size: var(--fs-p-reviews);
+}
+
 
 .comment-reviews__para {
-    color: var(--primary-accent);
+    color: white;
+    font-size: var(--fs-p-reviews);
+    text-align: start;
+    /* line-height: 2.2rem; */
+    letter-spacing: 0rem;
+}
+/* ------------------------------------------------- */
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }

@@ -1,0 +1,96 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-1-desk: 5.6rem;
+    --fs-1-mobile: 4.0rem;
+    --fs-p: 1.9rem;
+    --fs-p-reviews: 1.7rem;
+
+    --ff: 'League Spartan', sans-serif;
+    --fw-n: 300;
+    --fw-m: 500;
+    --fw-b: 800;
+
+    
+    --primary-clr-vdp: #512051;                     /* Very dark purple - heading, star review text and review comment BG*/
+    --primary-clr-mp: #927B91;                      /* Medium purple - heading para*/
+    --primary-clr-mrn: #EE69A4;                     /* Morone - "Verified Buyrer" text */
+    --primary-accent: #F7F2F7;                      /* Soft violet - accent for star review BG and comment review name and para */
+  
+  }
+
+
+/* General styles */
+
+img {
+    max-width: 100%;
+}
+
+/* General typography */
+h1 {
+    font-family: var(--ff);
+    font-size: var(--fs-1-mobile);
+    color: var(--primary-clr-vdp);
+    font-weight: var(--fw-b);
+}
+
+p {
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-m);
+}
+
+/* Attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Hero section */
+.hero__para {
+    color: var(--primary-clr-mp);
+}
+
+/* Star Review section */
+.star-reviews__box {
+    background: var(--primary-accent);
+}
+.star-reviews__para {
+    color: var(--primary-clr-vdp);
+}
+
+/* Comment Review section */
+.comment-reviews__box {
+    background-color: var(--primary-clr-vdp);
+}
+.comment-reviews__name {
+    color: white;
+}
+
+.comment-reviews__v-buyer {
+    color: var(--primary-clr-mrn);
+}
+
+.comment-reviews__para {
+    color: var(--primary-accent);
+}

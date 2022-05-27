@@ -118,17 +118,27 @@ h1 {
 
 .comment-reviews__profile {
     display: flex;
+    margin-bottom: 2.5em;
 }
 
 .comment-reviews__profile-img {
-    width: 15%;
+    width: 16%;
     border-radius: 50%;
     
+}
+
+.comment-reviews__profile-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+    margin-bottom: 0;
 }
 
 .comment-reviews__profile-name {
     color: white;
     font-size: var(--fs-p-reviews);
+    font-weight: var(--fw-b);
 }
 
 .comment-reviews__verified {

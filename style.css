@@ -77,6 +77,23 @@ body {
     align-items: center;
 }    
 
+.background-img-top {
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom: 0%;
+    left:0px;
+    background-repeat: none;
+}
+
+.background-img-bottom {
+    position: absolute;
+    
+    right:0px;
+    bottom: 0%;
+    
+}
+
 /* Hero section */
 h1,
 p,
@@ -162,6 +179,8 @@ h1 {
 
 /* Attribution */
 .attribution {
+    position: absolute;
+    bottom: 0%;
     font-size: 11px;
     text-align: center;
 }
@@ -262,24 +281,57 @@ h1 {
   
 
     /* General Typography */
-  
+    h1 {
+        font-size: var(--fs-1-desk);
+        width: 80%;
+    }
 
-    /* Header section */
+    /* Body and Main */
+    main {
+        margin: 7% 3%;
+    }
  
 
     /* Hero section */
-  
+    .hero__para {
+        width: 83%;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 25em;
+    }
+
+    .star-reviews__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    .box1 {
+        align-self: flex-start;
+    }
+
+    .box2 {
+        align-self: center;
+    }
+
+    .box3 {
+        align-self: flex-end;
+    }
+
     /* Testimonials */
     .testimonials {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         min-height: 33em;
-        outline: 2px solid red;
     }
 
     .testimonials__box {
-        width: 30%;
+        width: 31%;
         margin: 0;
     }
 }

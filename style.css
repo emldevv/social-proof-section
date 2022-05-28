@@ -78,7 +78,7 @@ body {
 }    
 
 /* Hero section */
-.hero h1,
+h1,
 p,
 .stars {
     text-align: center;
@@ -101,33 +101,36 @@ h1 {
     padding: 1.5em 0;
 }
 
+.star {
+    margin: 0 .3rem 0 .3rem;
+}
+
 .star-reviews__para {
     color: var(--primary-clr-vdp);
     font-weight: var(--fw-b);
     margin-top: .5em;
 }
-/* ------------------------------------------------- */
 
 /* Comment Review section */
-.comment-reviews__box {
+.testimonials__box {
     background-color: var(--primary-clr-vdp);
     border-radius: .8em;
     margin-bottom: 1.5em;
     padding: 4em 3em;
 }
 
-.comment-reviews__profile {
+.testimonials__profile {
     display: flex;
     margin-bottom: 2.5em;
 }
 
-.comment-reviews__profile-img {
-    width: 16%;
+.testimonials__profile-img {
+    width: 5rem;
     border-radius: 50%;
     
 }
 
-.comment-reviews__profile-detail {
+.testimonials__profile-detail {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -135,26 +138,27 @@ h1 {
     margin-bottom: 0;
 }
 
-.comment-reviews__profile-name {
+.testimonials__profile-name {
     color: white;
     font-size: var(--fs-p-reviews);
     font-weight: var(--fw-b);
 }
 
-.comment-reviews__verified {
+.testimonials__verified {
     color: var(--primary-clr-mrn);
     font-size: var(--fs-p-reviews);
 }
 
 
-.comment-reviews__para {
+.testimonials__para {
     color: white;
     font-size: var(--fs-p-reviews);
     text-align: start;
     /* line-height: 2.2rem; */
     letter-spacing: 0rem;
 }
-/* ------------------------------------------------- */
+
+
 
 /* Attribution */
 .attribution {
@@ -164,4 +168,118 @@ h1 {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+    /* General Styling */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        padding: 0;
+        margin-top: 3em;
+    }
+
+    /* Body and Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Hero section */
+    .hero-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+    .hero {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .hero__para {
+        margin-top: 1em;
+        text-align: start;
+    }
+
+    .reviews {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .box-1 {
+        align-self: flex-start;
+    }
+
+    .box-2 {
+        align-self: center;
+    }
+
+    .box-3 {
+        align-self: flex-end;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials__box {
+        width: 65%;
+    }
+
+    .t-box1 {
+        align-self: flex-start;
+    }
+
+    .t-box2 {
+        align-self: center;
+    }
+
+    .t-box3 {
+        align-self: flex-end;
+    }
+  }
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+@media (min-width: 900px) {
+    /* General style */
+  
+
+    /* General Typography */
+  
+
+    /* Header section */
+ 
+
+    /* Hero section */
+  
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 33em;
+        outline: 2px solid red;
+    }
+
+    .testimonials__box {
+        width: 30%;
+        margin: 0;
+    }
 }
